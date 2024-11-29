@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1 align="center"><b><u>REGISTRATION FORM</u></b></h1>
+	<form>
+		<!--Name-->
+		<label for="fname">First Name</label><br>
+		<input type="text" id="fname" name="name" maxlength="25" placeholder="Your Name" required><br><br>
+
+		<!--Email-->
+		<label for="email">Email</label><br>
+		<input type="email" id="email" name="email" placeholder="text@example.com" required autofocus><br><br>
+
+		<!--Password-->
+		<label for="password">Password</label><br>
+		<input type="text" id="password" name="password" min="6" max="12" pattern="[A-Za-z]{7}" required><br><br>
+
+		<!--Category-->
+		<label for="category">Category</label>
+		<select id="category" name="category" required>
+			<option value="student">Student</option>
+			<option value="employee">Employee</option>
+			<option value="freelancer" selected>Freelancer</option>
+		</select><br><br>
+	
+
+		<!--Event date-->
+	Event Date:
+		<input type="date" name="Event Date" required><br><br>
+
+		<!-- <form> -->
+			<!--Tickets-->
+			<!--01 Ticket-->
+			<input type="radio" id="ticket1" name="radio" required>
+			<label for="ticket1">01 Tickets</label>
+
+			<!--02 Ticket-->
+			<input type="radio" id="ticket2" name="radio" checked required>
+			<label for="ticket2">02 Tickets </label>
+
+			<!--03 Tickets-->
+			<input type="radio" id="ticket3" name="radio" required>
+			<label for="ticket3">03 Tickets</label><br><br>
+
+			<!--Payment-->
+			<input type="checkbox" id="checkbox" name="checkbox" required>
+			<label for="checkbox">Online Payment</label><br><br>
+
+			
+			Notes:
+			<br>
+			<textarea rows="5" cols="50" name="notes" placeholder="Write something here"></textarea>
+			<input type="submit" name="submit">
+		</form>
+
+</body>
+</html>
